@@ -8,7 +8,7 @@ public class Game {
 
         int genCounter = 0;
 
-        System.out.print("Podaj rozmiar tablicy: ");
+        System.out.print("Insert the size of a map: ");
         Scanner in = new Scanner(System.in);
         int size = in.nextInt();
 
@@ -26,6 +26,6 @@ public class Game {
         } while (board.tick());
         board.print();
         genCounter++;
-        System.out.println("Liczba generacji: " + genCounter);
+        System.out.println("Generations: " + genCounter);
     }
 }

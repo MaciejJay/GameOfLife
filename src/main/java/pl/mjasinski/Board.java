@@ -4,7 +4,7 @@ package pl.mjasinski;
 public class Board {
 
     public static final String ANSI_RESET = "\u001B[0m";
-    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RED = "\u001B[31m";
 
     public int size;
 
@@ -23,7 +23,7 @@ public class Board {
     public void print() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                System.out.print((grid[i][j] ? ANSI_GREEN + "x" + ANSI_RESET : "-") + "  ");
+                System.out.print((grid[i][j] ? ANSI_RED + "x" + ANSI_RESET : "-") + "  ");
             }
             System.out.println();
         }
