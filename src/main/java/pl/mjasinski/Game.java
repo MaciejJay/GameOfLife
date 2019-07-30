@@ -8,7 +8,7 @@ public class Game {
 
         int genCounter = 0;
 
-        System.out.print("Insert the size of a map: ");
+        System.out.print("Insert the size of a map you want to generate: ");
         Scanner in = new Scanner(System.in);
         int size = in.nextInt();
 
